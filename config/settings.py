@@ -102,7 +102,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+        'rest_framework.permissions.AllowAny',
     ),
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
@@ -176,7 +176,12 @@ SPECTACULAR_SETTINGS = {
 # ==== CORS ====
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
-
+CORS_ALLOWED_ORIGINS = [
+    "https://stream-dream-glow.lovable.app",
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://stream-dream-glow.lovable.app",
+]
 # ==== Cache (LocMem — Redis-ni keyin ulash mumkin) ====
 CACHES = {
     'default': {

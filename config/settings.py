@@ -178,9 +178,11 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "https://stream-dream-glow.lovable.app",
+    "https://stream-dream-glow.ismatismoilov709.workers.dev",  # yangi qo'shing
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://stream-dream-glow.lovable.app",
+    "https://stream-dream-glow.ismatismoilov709.workers.dev",  # yangi qo'shing
 ]
 # ==== Cache (LocMem — Redis-ni keyin ulash mumkin) ====
 CACHES = {
